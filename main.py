@@ -21,9 +21,8 @@ class Car:
 			return True
 		else:
 			return False
-		
-		
-	
+			
+# Comparing object attributes
 my_car=Car()
 his_car=Car()
 his_car.update_make("Toyota")
@@ -32,5 +31,16 @@ print(my_car.make)
 print(my_car.year)
 print(his_car.make)
 print(his_car.year)
-
 print (his_car >= my_car)
+
+#Singleton Implementation
+
+from tigger import Tigger
+
+tiger_a=Tigger()
+tiger_b=Tigger()
+print(tiger_a)
+print(tiger_b)
+print(id(tiger_a))
+print(id(tiger_b))
+print(f"Are they same ? : {tiger_a is tiger_b}")
